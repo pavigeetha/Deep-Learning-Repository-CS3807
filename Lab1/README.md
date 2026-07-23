@@ -22,8 +22,7 @@ scikit-learn's `Perceptron`.
 ## Dataset
 
 - **Instances:** 1372
-- **Features:** Variance, Skewness, Curtosis, Entropy (all numeric, extracted from
-  wavelet-transformed banknote images)
+- **Features:** Variance, Skewness, Curtosis, Entropy
 - **Target:** Class — 0 = Authentic, 1 = Forged
 - **Missing values:** None
 
