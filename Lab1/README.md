@@ -1,13 +1,8 @@
 # Experiment 1 — Single Layer Perceptron for Binary Classification
 
-**Course:** CS3807 – Deep Learning Laboratory
-**Program:** B.Tech Artificial Intelligence & Data Science, Semester V
-**Institution:** Shiv Nadar University Chennai
-
 ## Overview
 
-This experiment implements a **Single Layer Perceptron from scratch** (no `sklearn` model
-under the hood — just NumPy) and trains it on the [Banknote Authentication
+This experiment implements a **Single Layer Perceptron from scratch** and trains it on the [Banknote Authentication
 Dataset](https://archive.ics.uci.edu/dataset/267/banknote+authentication) from the UCI
 Machine Learning Repository to classify banknotes as authentic or forged.
 
