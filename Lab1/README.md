@@ -1,13 +1,8 @@
 # Experiment 1 — Single Layer Perceptron for Binary Classification
 
-**Course:** CS3807 – Deep Learning Laboratory
-**Program:** B.Tech Artificial Intelligence & Data Science, Semester V
-**Institution:** Shiv Nadar University Chennai
-
 ## Overview
 
-This experiment implements a **Single Layer Perceptron from scratch** (no `sklearn` model
-under the hood — just NumPy) and trains it on the [Banknote Authentication
+This experiment implements a **Single Layer Perceptron from scratch** and trains it on the [Banknote Authentication
 Dataset](https://archive.ics.uci.edu/dataset/267/banknote+authentication) from the UCI
 Machine Learning Repository to classify banknotes as authentic or forged.
 
@@ -21,16 +16,14 @@ scikit-learn's `Perceptron`.
 | File | Description |
 |---|---|
 | `Experiment_1_Single_Layer_Perceptron.ipynb` | Main notebook — all tasks, plots, and results |
-| `Experiment_1_Lab_Manual.pdf` | Original lab manual this notebook implements |
 | `data_banknote_authentication.txt` | Dataset (UCI Banknote Authentication, 1372 rows, 4 features) |
-| `plots_Lab1/` | All generated plots, saved as 600 DPI PNGs |
+| `plots` | All generated plots, saved as 600 DPI PNGs |
 
 ## Dataset
 
 - **Instances:** 1372
-- **Features:** Variance, Skewness, Curtosis, Entropy (all numeric, extracted from
-  wavelet-transformed banknote images)
-- **Target:** `Class` — 0 = Authentic, 1 = Forged
+- **Features:** Variance, Skewness, Curtosis, Entropy
+- **Target:** Class — 0 = Authentic, 1 = Forged
 - **Missing values:** None
 
 ## What the Notebook Does
@@ -43,22 +36,7 @@ scikit-learn's `Perceptron`.
 5. **Evaluation** — accuracy, precision, recall, F1-score, confusion matrix
 6. **Learning rate comparison** — η = 0.001, 0.01, 0.1
 7. **Decision boundary** — 2-feature (Variance vs Skewness) visualization
-8. **Scikit-learn comparison** — scratch implementation vs. `sklearn.linear_model.Perceptron`
-
-Every plot's titles, axis labels, and legends are rendered in **bold**, and all plots are
-saved at **600 DPI** to `plots_Lab1/`.
-
-## Results
-
-| Metric | Scratch Perceptron |
-|---|---|
-| Accuracy | 0.9964 |
-| Precision | 1.0000 |
-| Recall | 0.9929 |
-| F1-score | 0.9964 |
-
-The dataset is close to linearly separable, so the perceptron converges to a near-perfect
-decision boundary within 50 epochs.
+8. **Scikit-learn comparison** — scratch implementation vs. sklearn.linear_model.Perceptron
 
 ## How to Run
 
@@ -72,15 +50,7 @@ decision boundary within 50 epochs.
    ```bash
    jupyter notebook Experiment_1_Single_Layer_Perceptron.ipynb
    ```
-4. Run all cells top to bottom. Plots will be (re)generated into `plots_Lab1/`.
-
-## Notes
-
-- The perceptron uses only the **step activation function**, as specified by the lab manual —
-  differentiable activations (Sigmoid, ReLU, etc.) are covered in later experiments on
-  multilayer networks.
-- A single-layer perceptron can only learn a **linear** decision boundary, so it cannot solve
-  non-linearly-separable problems like XOR — see the notebook's discussion section for why.
+4. Run all cells top to bottom. Plots will be generated into `plots`.
 
 ## References
 
