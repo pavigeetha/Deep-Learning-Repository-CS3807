@@ -10,25 +10,6 @@
 4. **Hyperparameter search**: `RandomizedSearchCV` (`n_iter=15`, `cv=5`, 75 fits total) over hidden layers, neurons, learning rate, activation, dropout, optimizer, batch size, and epochs.
 5. Trains the best-found config and compares it against the baseline on accuracy, precision, recall, F1, and training time.
 
-## Results
-
-| Metric | Baseline | Optimized |
-|---|---|---|
-| Accuracy | 0.8756 | 0.8794 |
-| Precision | 0.8768 | 0.8829 |
-| Recall | 0.8756 | 0.8794 |
-| F1-score | 0.8753 | 0.8805 |
-| Training time (s) | 115.2 | 50.5 |
-
-**Best hyperparameters found:**
-- optimizer: `adam`, learning rate: `0.001`
-- hidden layers: `1`, hidden neurons: `256`
-- activation: `tanh`, dropout: `0.2`
-- epochs: `20`, batch size: `64`
-- Best CV accuracy: `0.8855`
-
-The tuned model matches baseline accuracy with a slight edge, while training in under half the time (smaller effective epoch/batch cost).
-
 ## Requirements
 
 - Python, TensorFlow/Keras, scikit-learn, scikeras, pandas, numpy, matplotlib, seaborn
@@ -52,3 +33,21 @@ Plots are saved automatically to `plots/` (created on first run).
 ## Outputs
 
 Plots (sample images, class distribution, accuracy/loss curves, confusion matrices, hyperparameter search results, baseline vs optimized comparison) are saved to `plots/`.
+## Results
+
+| Metric | Baseline | Optimized |
+|---|---|---|
+| Accuracy | 0.8756 | 0.8794 |
+| Precision | 0.8768 | 0.8829 |
+| Recall | 0.8756 | 0.8794 |
+| F1-score | 0.8753 | 0.8805 |
+| Training time (s) | 115.2 | 50.5 |
+
+**Best hyperparameters found:**
+- optimizer: `adam`, learning rate: `0.001`
+- hidden layers: `1`, hidden neurons: `256`
+- activation: `tanh`, dropout: `0.2`
+- epochs: `20`, batch size: `64`
+- Best CV accuracy: `0.8855`
+
+The tuned model matches baseline accuracy with a slight edge, while training in under half the time (smaller effective epoch/batch cost).
