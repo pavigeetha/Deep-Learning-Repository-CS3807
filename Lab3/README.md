@@ -116,21 +116,6 @@ The results indicate that retaining the strongest activations using Max Pooling 
 
 The confusion matrix also showed that most predictions were concentrated along the diagonal, indicating correct classifications. Some visually similar classes, such as **cat and dog** or **automobile and truck**, were more difficult for the model to distinguish.
 
-## Visualizations
-
-The notebook contains visualizations for:
-
-* Sample CIFAR-10 images
-* Class distribution
-* CNN feature maps
-* Max Pooling and Average Pooling outputs
-* Training accuracy
-* Validation accuracy
-* Training loss
-* Validation loss
-* Confusion matrix
-* ReLU and Sigmoid activation functions
-
 ## Conclusion
 
 This experiment demonstrates the basic working of a CNN for image classification using PyTorch. The visualizations help show how convolutional layers extract features and how pooling and activation functions influence the learning process.
