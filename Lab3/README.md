@@ -142,16 +142,3 @@ DeepLearning_Experiment3_Pytorch (1).ipynb
 
 4. The CIFAR-10 dataset will be downloaded automatically through `torchvision` if it is not already available.
 
-## Project Structure
-
-```text
-.
-├── DeepLearning_Experiment3_Pytorch (1).ipynb
-└── README.md
-```
-
-## Author
-
-**Pavithra Ramesh Babu**
-
-AI & Data Science
